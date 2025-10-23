@@ -35,7 +35,7 @@ function showPlayerNames(){
 function init(){
     grille=[];
     showGrille();
-    players.push({name: localStorage.getItem('player1'), color: "#D000D0"});
+    players.push({name: localStorage.getItem('player1'), color: "#FFFF00"});
     players.push({name: localStorage.getItem('player2'), color: "#FF0000"});
     currentPlayer = 0;
     playerDom.forEach(player => {
