@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .grille{
     display: flex;
     width: 70%;
@@ -9,12 +13,23 @@
 .col{
     display: flex;
     flex-direction: column;
+    height: 80%;
+    width: 10%;
 }
 
-.square{
-    width: 30px;
-    height: 30px;
+.square, .col button{
+    width: 100%;
+    height: 10%;
     border:1px solid black;
+}
+
+.col button{
+    cursor: pointer;
+}
+
+.col button:hover{
+    background-color: #1565c0;
+    color: white;
 }
 
 body{
@@ -37,11 +52,26 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 24px;
 }
 .scoreboard .hightlight{
     background-color: #FFFFFF;
 }
 
+.scoreboard .reset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.scoreboard #reset{
+    background-color: #1665c0;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+}
 
 
 
