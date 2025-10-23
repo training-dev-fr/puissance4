@@ -15,3 +15,8 @@
     flex-direction: column;
     padding: 15px;
 }
+
+.error{
+    border: 1px solid red;
+    outline: none;
+}

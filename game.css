@@ -1,0 +1,47 @@
+.grille{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.square{
+    width: 30px;
+    height: 30px;
+    border:1px solid black;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+}
+
+.scoreboard{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border-left: 1px solid black;
+}
+
+.scoreboard .player{
+    height: 40%;
+    background-color: #D0D0D0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scoreboard .hightlight{
+    background-color: #FFFFFF;
+}
+
+
+
+
