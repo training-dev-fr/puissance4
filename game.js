@@ -3,15 +3,16 @@ let players = [];
 let currentPlayer = null;
 let playerDom = document.querySelectorAll('.player');
 
-for(let col = 0; col < 7;col++){
-    let newCol = [];
-    for(let square =0;square <7; square ++){
-        newCol.push({x:col,y:square});
-    }
-    grille.push(newCol);
-}
+
 
 function showGrille(){
+    for(let col = 0; col < 7;col++){
+        let newCol = [];
+        for(let square =0;square <7; square ++){
+            newCol.push({x:col,y:square});
+        }
+        grille.push(newCol);
+    }
     let grilleDOM = '';
     for(let col of grille){
         grilleDOM += `<div class="col" data-col="${col[0].x}">`
@@ -32,6 +33,7 @@ function showPlayerNames(){
 }
 
 function init(){
+    grille=[];
     showGrille();
     players.push({name: localStorage.getItem('player1'), color: "#D000D0"});
     players.push({name: localStorage.getItem('player2'), color: "#FF0000"});
