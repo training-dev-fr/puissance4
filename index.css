@@ -1,0 +1,17 @@
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-block{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
